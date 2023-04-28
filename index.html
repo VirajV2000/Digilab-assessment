@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front end Development Assessment</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <script src="https://kit.fontawesome.com/8e556ae893.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="logo">
+            <div class="img">
+                <h1>Loookscout</h1>
+            </div>
+        </div>
+        <div class="container">
+            <!-- <div class="logo">
+                <img src="image.png" alt="logo">
+            </div> -->
+            <div class="cta">
+                <div class="cta-section">
+    
+                    <i class="fa fa-lock color" style="border:2px solid #437EF7;color:#437EF7"></i><hr>
+                    <i class="fa fa-user"></i><hr>
+                    <i class="fa fa-dollar"></i><hr>
+                    <i class="fa fa-thumbs-up"></i>
+                </div>
+                <div class="cta-name">
+                    <p style="color: #437EF7;">Account</p>
+                    <p>Personal</p>
+                    <p>Billing</p>
+                    <p>Done</p>
+                </div>
+            </div>
+            <div class="input">
+                <form action="handle.html" method="post" class="my-form">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <div class="input-group">
+                          <input type="text" id="name" name="name" placeholder="Bryan Koelpin">
+                          <button type="button" class="info-btn" onclick="showInfo('info-username')"><i class="fas fa-info-circle"></i></button><br>
+                        </div>
+                        <span id="info-username" class="info-message" >Enter your desired username.</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Email:*</label>
+                        <div class="input-group">
+                          <input type="email" id="name" name="name" placeholder="Email Address" required>
+                          <button type="button" class="info-btn"><i class="fas fa-info-circle"></i></button>
+                        </div>
+                        <span id="info-username" class="info-message" >Enter your desired username.</span>
+                        <p >Please input a real Email Address</p>
+                    </div>
+                    <div class="password">
+    
+                        <div class="form-group left">
+                            <label for="name">Password:*</label>
+                            <div class="input-group">
+                              <input type="password" id="password" name="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                              title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                              <button type="button" class="info-btn"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                            <p>Please enter the password</p>
+                        </div>
+                        <div class="form-group right">
+                            <label for="name">Confirm Password:*</label>
+                            <div class="input-group">
+                              <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required oninput="validatePassword()">
+                              <button type="button" class="info-btn"><i class="fas fa-info-circle"></i></button>
+                            </div>
+                            <p >Password need to be matched</p>
+                        </div>
+                    </div>
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="check" name="terms" value="1" required >
+                        <span>I accept the Terms and Privacy Policy </span>
+                      </label>
+                      
+                
+            </div>
+            <div class="btn">
+                   <button type="submit" name="submit">Next <i class="fa fa-solid fa-greater-than"></i></button>
+            </div>
+        </form>
+        </div>
+    </div>
+</body>
+</html>
